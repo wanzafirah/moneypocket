@@ -57,23 +57,23 @@ st.markdown(
       .stApp {
         background: linear-gradient(135deg, #FFF5F8 0%, #F1F7FF 50%, #F4FFF8 100%);
       }
-      h1, h2, h3 { color: #6B5A6E; }
+      h1, h2, h3 { color: #000000; }
       .hero {
         background: linear-gradient(120deg, #FFD1DC 0%, #C7CEEA 50%, #B5EAD7 100%);
         padding: 22px 26px; border-radius: 22px; margin-bottom: 18px;
         box-shadow: 0 6px 18px rgba(180, 160, 200, 0.25);
       }
-      .hero h1 { margin: 0; font-size: 2rem; color: #5A4B57; }
-      .hero p  { margin: 6px 0 0; color: #6B5A6E; font-size: 1rem; }
+      .hero h1 { margin: 0; font-size: 2rem; color: #000000; }
+      .hero p  { margin: 6px 0 0; color: #000000; font-size: 1rem; }
       div[data-testid="stMetric"] {
         background: #FFFFFFCC; border: 2px solid #FFE3EE;
         border-radius: 18px; padding: 12px 16px;
         box-shadow: 0 4px 14px rgba(190, 175, 210, 0.18);
       }
-      div[data-testid="stMetricLabel"] { color: #8A7A8D; }
+      div[data-testid="stMetricLabel"] { color: #000000; }
       .stButton > button {
         border-radius: 999px; border: 2px solid #FFC9DD;
-        background: #FFF0F5; color: #6B5A6E; font-weight: 600;
+        background: #FFF0F5; color: #000000; font-weight: 600;
         padding: 0.35rem 1rem; transition: all .15s ease;
       }
       .stButton > button:hover { background: #FFE0EC; border-color: #FF9EB5; }
@@ -85,7 +85,7 @@ st.markdown(
       .stTabs [aria-selected="true"] { background: #FFD1DC !important; border-color: #FF9EB5 !important; }
       .tip {
         background: #FFFDF3; border: 2px dashed #FFE0A3; border-radius: 16px;
-        padding: 12px 16px; color: #7A6A4F;
+        padding: 12px 16px; color: #000000;
       }
     </style>
     """,
@@ -246,7 +246,7 @@ with tab_stats:
             )
             fig.update_layout(
                 paper_bgcolor="rgba(0,0,0,0)",
-                font_color="#6B5A6E",
+                font_color="#000000",
                 legend_title_text="",
             )
             st.plotly_chart(fig, width="stretch")
@@ -265,7 +265,7 @@ with tab_stats:
             fig2.update_layout(
                 paper_bgcolor="rgba(0,0,0,0)",
                 plot_bgcolor="rgba(0,0,0,0)",
-                font_color="#6B5A6E",
+                font_color="#000000",
                 xaxis_title="",
                 yaxis_title="RM",
             )
