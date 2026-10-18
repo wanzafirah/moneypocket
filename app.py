@@ -57,6 +57,17 @@ st.markdown(
       .stApp {
         background: linear-gradient(135deg, #FFF5F8 0%, #F1F7FF 50%, #F4FFF8 100%);
       }
+      /* every piece of text on the page is black */
+      .stApp, .stApp *, .stApp p, .stApp span, .stApp label, .stApp li,
+      .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6,
+      .stApp input, .stApp textarea, .stApp select, .stApp button,
+      .stApp table, .stApp td, .stApp th,
+      [data-testid="stSidebar"], [data-testid="stSidebar"] *,
+      [data-testid="stWidgetLabel"] *, [data-testid="stMarkdownContainer"] *,
+      [data-testid="stCaptionContainer"] *, [data-testid="stAlertContainer"] *,
+      [data-baseweb="tab"] *, header[data-testid="stHeader"] *, [data-testid="stToolbar"] * {
+        color: #000000 !important;
+      }
       h1, h2, h3 { color: #000000; }
       .hero {
         background: linear-gradient(120deg, #FFD1DC 0%, #C7CEEA 50%, #B5EAD7 100%);
