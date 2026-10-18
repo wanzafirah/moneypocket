@@ -68,6 +68,40 @@ st.markdown(
       [data-baseweb="tab"] *, header[data-testid="stHeader"] *, [data-testid="stToolbar"] * {
         color: #000000 !important;
       }
+      /* sidebar: deep pastel panel with white font */
+      .stApp [data-testid="stSidebar"],
+      .stApp [data-testid="stSidebarContent"] {
+        background: linear-gradient(180deg, #9B8AC4 0%, #7A69A8 100%) !important;
+      }
+      .stApp [data-testid="stSidebar"] *,
+      .stApp [data-testid="stSidebar"] p,
+      .stApp [data-testid="stSidebar"] span,
+      .stApp [data-testid="stSidebar"] label,
+      .stApp [data-testid="stSidebar"] h1,
+      .stApp [data-testid="stSidebar"] h2,
+      .stApp [data-testid="stSidebar"] h3,
+      .stApp [data-testid="stSidebar"] button,
+      .stApp [data-testid="stSidebar"] input,
+      .stApp [data-testid="stSidebar"] small {
+        color: #FFFFFF !important;
+      }
+      .stApp [data-testid="stSidebar"] hr {
+        border-color: rgba(255, 255, 255, 0.35) !important;
+      }
+      /* keep sidebar fields and buttons readable on the dark panel */
+      .stApp [data-testid="stSidebar"] [data-baseweb="input"],
+      .stApp [data-testid="stSidebar"] [data-baseweb="base-input"],
+      .stApp [data-testid="stSidebar"] .stButton > button,
+      .stApp [data-testid="stSidebar"] [data-testid="stDownloadButton"] button {
+        background: rgba(255, 255, 255, 0.22) !important;
+        border: 2px solid rgba(255, 255, 255, 0.55) !important;
+        border-radius: 12px !important;
+        color: #FFFFFF !important;
+      }
+      .stApp [data-testid="stSidebar"] .stButton > button:hover,
+      .stApp [data-testid="stSidebar"] [data-testid="stDownloadButton"] button:hover {
+        background: rgba(255, 255, 255, 0.35) !important;
+      }
       h1, h2, h3 { color: #000000; }
       .hero {
         background: linear-gradient(120deg, #FFD1DC 0%, #C7CEEA 50%, #B5EAD7 100%);
